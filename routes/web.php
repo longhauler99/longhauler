@@ -29,11 +29,5 @@ Route::post('post/{post}/comments/{comment}', function ($post, $comment)
 
 Route::get('secret', function (Request $request)
 {
-    if(! $request->hasValidSignature() )
-    {
-        abort(401);
-    }
-
     return "This is a secret message";
-
-})->name('secret');
+})->name('secret')->middleware('signed');

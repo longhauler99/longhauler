@@ -10,11 +10,7 @@
 <h3 style="color: maroon">Home</h3>
 
 <div>
-{{--    {{ url()->current() }}--}}
-{{--    {{ url()->full() }}--}}
-{{--    {{ url()->previous() }}--}}
-{{--    {{ URL::previous() }} {{--    use facades; no namespacing required. It is already available in views--}}
-    {{ url('about', ['apple'=>1, 'banana'=>2]) }}
+    {{ route('about') }}
 </div>
 
 </body>

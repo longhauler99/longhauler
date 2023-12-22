@@ -1,4 +1,4 @@
-<html>
+<html lang="">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Laravel Laratips</title>
@@ -10,7 +10,7 @@
 <h3 style="color: maroon">Home</h3>
 
 <div>
-    {{ route('about') }}
+    {{ route('about', ['apple'=>1, 'banana'=>2]) }}
 </div>
 
 </body>

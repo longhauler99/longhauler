@@ -8,7 +8,8 @@
 <a href="{{ route('home') }}">Home</a>
 <a href="{{ route('about') }}">About us</a>
 <a href="{{ route('contact-us') }}">Contact Us</a>
-<h3 style="color: maroon">About Us</h3>
+{{--<a href="{{ URL::temporarySignedRoute('secret', now()->addSeconds(10)) }}">Secret</a>--}}
+<h3 style="color: maroon">Contact Us</h3>
 
 </body>
 </html>

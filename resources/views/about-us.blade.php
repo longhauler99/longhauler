@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Laravel Laratips</title>
 </head>
-<body style="background: darkkhaki">
+<body style="background: #1a202c">
 
 <a href="{{ route('home') }}">Home</a>
 <a href="{{ route('about') }}">About us</a>

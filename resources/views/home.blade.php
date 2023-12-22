@@ -11,11 +11,11 @@
         }
     </style>
 </head>
-<body style="background: darkkhaki">
+<body style="background: #1a202c">
 
 <a href="{{ route('home') }}">Home</a>
 <a href="{{ route('about') }}">About us</a>
-<a href="{{ URL::signedRoute('secret') }}">Secret</a>
+<a href="{{ URL::temporarySignedRoute('secret', now()->addSeconds(10)) }}">Secret</a>
 <h3 style="color: maroon">Home</h3>
 
 <div class="my_border">

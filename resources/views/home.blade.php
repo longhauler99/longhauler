@@ -5,14 +5,17 @@
 </head>
 <body style="background: darkkhaki">
 
-<h3 style="color: maroon">Home</h3>
 <a href="{{ route('home') }}">Home</a>
 <a href="{{ route('about') }}">About us</a>
+<h3 style="color: maroon">Home</h3>
 
 <div>
 {{--    {{ url()->current() }}--}}
 {{--    {{ url()->full() }}--}}
-    {{ url()->previous() }}
+{{--    {{ url()->previous() }}--}}
+    {{ URL::previous() }} {{--    use facades; no namespacing required. It is already available in views--}}
+
 </div>
+
 </body>
 </html>

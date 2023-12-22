@@ -5,9 +5,9 @@
 </head>
 <body style="background: darkkhaki">
 
-<h3 style="color: maroon">About Us</h3>
 <a href="{{ route('home') }}">Home</a>
 <a href="{{ route('about') }}">About us</a>
+<h3 style="color: maroon">About Us</h3>
 
 </body>
 </html>

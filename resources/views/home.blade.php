@@ -18,7 +18,7 @@
 <h3 style="color: maroon">Home</h3>
 
 <div class="my_border">
-    {{ route('about', ['slug'=>'english', 'apple'=>1, 'banana'=>2]) }}
+    {{ route('post.comment', ['post'=>'first-post', 'comment'=>'first-comment']) }}
 </div>
 
 </body>

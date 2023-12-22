@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\HomeController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,14 @@ Route::post('post/{post}/comments/{comment}', function ($post, $comment)
 {
     return "post";
 })->name('post.comment');
+
+Route::get('secret', function (Request $request)
+{
+    if(! $request->hasValidSignature() )
+    {
+        abort(401);
+    }
+
+    return "This is a secret message";
+
+})->name('secret');

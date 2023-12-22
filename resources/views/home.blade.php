@@ -10,7 +10,7 @@
 <h3 style="color: maroon">Home</h3>
 
 <div>
-    {{ route('about', ['slug'=>'english']) }}
+    {{ route('about', ['slug'=>'english', 'apple'=>1, 'banana'=>2]) }}
 </div>
 
 </body>

@@ -14,7 +14,7 @@
 {{--    {{ url()->full() }}--}}
 {{--    {{ url()->previous() }}--}}
 {{--    {{ URL::previous() }} {{--    use facades; no namespacing required. It is already available in views--}}
-    {{ url('about') }}
+    {{ url('about', ['apple', 'banana']) }}
 </div>
 
 </body>

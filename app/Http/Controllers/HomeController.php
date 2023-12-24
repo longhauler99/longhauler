@@ -11,7 +11,7 @@ class HomeController extends Controller
     {
         Session::put('activeNav', 'home');
 
-//        Session::remove('activeNav');
+        Session::flash('alertMessage', 'Successfully submitted.');
 
         return view('home');
     }

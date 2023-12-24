@@ -14,5 +14,9 @@
     <div class="container mx-auto text-white">
         Home Page
     </div>
+
+<div>
+    {{ session('alertMessage') }}
+</div>
 </body>
 </html>

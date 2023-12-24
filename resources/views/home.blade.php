@@ -1,15 +1,18 @@
-<html lang="">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>Laravel Laratips</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    @vite('resources/css/app.css')
 </head>
 <body style="background: #1a202c">
+    @include('partials.navbar')
 
-<a href="{{ route('home') }}">Home</a>
-<a href="{{ route('about') }}">About us</a>
-<a href="{{ route('contact-us') }}">Contact Us</a>
-{{--<a href="{{ URL::temporarySignedRoute('secret', now()->addSeconds(10)) }}">Secret</a>--}}
-<h3 style="color: maroon">Home</h3>
-
+    <div class="container mx-auto text-white">
+        Home Page
+    </div>
 </body>
 </html>

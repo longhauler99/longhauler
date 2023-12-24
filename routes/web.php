@@ -24,6 +24,8 @@ Route::get('/about/{slug?}', [AboutController::class, 'index']) //->middleware('
     ->name('about');
 
 Route::get('/contact-us', [ContactUsController::class, 'index'])->name('contact-us');
+
+
 /*Route::post('post/{post}/comments/{comment}', function ($post, $comment)
 {
     return "post";

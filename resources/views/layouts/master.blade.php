@@ -9,6 +9,7 @@
     @vite('resources/css/app.css')
 </head>
 <body style="background: #1a202c">
+
 @include('partials.navbar')
 
 <div class="container mx-auto text-white">

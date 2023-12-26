@@ -14,10 +14,6 @@ class HomeController extends Controller
         $data = [
             'title' => 'Home Page',
             'teams' => [
-                'Team A',
-                'Team B',
-                'Team C',
-                'Team D',
             ],
         ];
 

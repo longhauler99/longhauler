@@ -11,8 +11,10 @@ class HomeController extends Controller
     {
         Session::put('activeNav', 'home');
 
-//        Session::flash('alertMessage', 'Successfully submitted.');
+        $data = [
+            'title' => 'Home Page'
+        ];
 
-        return view('home');
+        return view('home', $data );
     }
 }

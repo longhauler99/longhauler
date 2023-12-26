@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title') Home @endsection
+@section('title') {{ $title }} @endsection
 {{--@section('title', 'home')--}}
 
 @section('content')

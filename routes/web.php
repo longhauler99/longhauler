@@ -20,9 +20,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/contact-us', [ContactUsController::class, 'index'])->name('contact-us');
-Route::get('contact-submit', function() {
-    session()->flash('alertMessage', 'Contact Us form submitted successfully.');
-
-    return redirect()->route('home');
-})->name('contact-submit');
-

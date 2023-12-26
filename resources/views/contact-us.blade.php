@@ -13,6 +13,10 @@
 
 <div class="container mx-auto text-white">
     Contact Us Page
+
+    <form action="{{ route('contact-submit') }}">
+        <button class="px-4 py-2 rounded text-white bg-purple-700">Submit</button>
+    </form>
 </div>
 </body>
 </html>

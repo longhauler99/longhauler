@@ -18,20 +18,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-
-Route::get('/about/{slug?}', [AboutController::class, 'index']) //->middleware('check_age')
-    ->middleware('above_age:10')
-    ->name('about');
-
+Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/contact-us', [ContactUsController::class, 'index'])->name('contact-us');
+Route::get('contact-submit', function() {
+    session()->flash('alertMessage', 'Contact Us form submitted successfully.');
 
+    return redirect()->route('home');
+})->name('contact-submit');
 
-/*Route::post('post/{post}/comments/{comment}', function ($post, $comment)
-{
-    return "post";
-})->name('post.comment');
-
-Route::get('secret', function (Request $request)
-{
-    return "This is a secret message";
-})->name('secret')->middleware('signed');*/

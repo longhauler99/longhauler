@@ -12,7 +12,8 @@ class HomeController extends Controller
         Session::put('activeNav', 'home');
 
         $data = [
-            'title' => 'Home Page'
+            'title' => 'Home Page',
+            'content' => 'Home page content',
         ];
 
         return view('home', $data );

@@ -5,6 +5,6 @@
 
 @section('content')
     <div>
-        Home Page
+        {{ $content }}
     </div>
 @endsection

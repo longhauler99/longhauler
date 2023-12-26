@@ -5,6 +5,10 @@
 
 @section('content')
     <div>
+        @if(true)
         {!! $content !!}
+        @else
+            No content to see.
+        @endif
     </div>
 @endsection

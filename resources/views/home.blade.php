@@ -5,6 +5,6 @@
 
 @section('content')
     <div>
-        Home Page
+        <x-alert />
     </div>
 @endsection

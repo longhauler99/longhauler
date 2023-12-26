@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title') {{ $title }} @endsection
+@section('title')  @endsection
 {{--@section('title', 'home')--}}
 
 @section('content')
@@ -12,5 +12,6 @@
         </div>
     @else
         <div>No teams available.</div>
+{{--        {{ $title }}--}}
     @endif
 @endsection

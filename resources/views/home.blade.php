@@ -5,6 +5,6 @@
 
 @section('content')
     <div>
-        {{ $content }}
+        {!! $content !!}
     </div>
 @endsection

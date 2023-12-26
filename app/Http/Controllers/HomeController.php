@@ -13,7 +13,7 @@ class HomeController extends Controller
 
         $data = [
             'title' => 'Home Page',
-            'content' => 'Home page content',
+            'content' => '<div>Home page content</div>',
         ];
 
         return view('home', $data );

@@ -5,8 +5,8 @@
 
 @section('content')
     <div>
-        <x-alert data-id="23" class="h-22">
+        <x-Ui.alert data-id="23" class="h-22">
             <h1>The alert message from slot</h1>
-        </x-alert>
+        </x-Ui.alert>
     </div>
 @endsection

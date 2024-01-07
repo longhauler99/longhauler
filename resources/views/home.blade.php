@@ -5,6 +5,6 @@
 
 @section('content')
     <div>
-        <x-alert message="The alert message" type="error" />
+        <x-alert :message="session('activeNav')" />
     </div>
 @endsection
